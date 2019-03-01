@@ -1,0 +1,20 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+    <div class="row">
+        {% for tut, partone in part_ones.items %}
+            <div class="col s12 m6 l6 center-align">
+                <a href="{{tut.circle_slug}}", style="color:#000">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            {{tut.circle_summary}}
+                            <img src="{{tut.circle_image}}">
+                            <div class="card-title" style="color:#000">{{tut.circle_series}}</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

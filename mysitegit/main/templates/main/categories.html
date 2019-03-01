@@ -1,0 +1,20 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+    <div class="row">
+        {% for cat in categories %}
+            <div class="col s12 m6 l6 center-align">
+                <a href="{{cat.category_slug}}", style="color:#000">
+                    <div class="circle card hoverable  blue-grey lighten-3">
+                        <div class="card-image">
+                        <img src="{{cat.image_card}}">
+                            <span class="card-title" style="color:#000">{{cat.tutorial_category}}</span>
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

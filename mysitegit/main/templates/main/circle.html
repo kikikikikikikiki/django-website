@@ -1,0 +1,20 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+    <div class="row">
+        {% for tut, partone in part_ones.items %}
+
+            <div class="col s12 m6 l6 center-align">
+                <a href="{{partone}}", style="color:#000">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/5376b5aa-3186-4ccf-b719-f7c5f26cddc0/dd07hxq-a3432025-52b4-45ff-9c48-dea2f2a4cd89.png/v1/fill/w_1600,h_1600,q_80,strp/untitled_by_surlspic_dd07hxq-fullview.jpg">
+                            <div class="card-title" style="color:#000">{{tut.circle_series}}</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

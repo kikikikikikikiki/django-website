@@ -1,0 +1,28 @@
+{% extends 'main/header2.html' %}
+
+{% block content %}
+
+    <div class="row ">
+        {% for tut, partone in part_ones.items %}
+            {% if tut.circle_slug == '000' %}
+                <div class="col s12 m6 offset-l2 l3  center-align" style="">
+                        <div class="z-depth-5 card hoverable">
+                            <div class="card-image" style="background-color: #000">
+                                <img class="materialboxed" src="{{tut.circle_image}}">
+                                <a href="" style="margin-bottom: 10px"class="z-depth-3 btn-floating btn-small waves-effect waves-light red"></a>
+                            </div>
+                        </div>
+                </div>
+            {% else %}
+                <div class="col s12 m6 offset-l2 l3  center-align" style="">
+                        <div class="z-depth-5 card hoverable">
+                            <div class="card-image" style="background-color: #000">
+                                <img class="materialboxed" src="{{tut.circle_image}}">
+                                <a href="{{tut.circle_slug}}" style="margin-bottom: 10px"class="z-depth-3 btn-floating btn-small pulse waves-effect waves-light white"></a>
+                            </div>
+                        </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
