@@ -1,2 +1,2 @@
-# reimagined-octo-telegram
+# Django website
 A Django website project
