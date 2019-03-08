@@ -1,7 +1,6 @@
 # Django website
 A Django website project<br/>
 The most interesting part is probably : 
-<br/>  
  reimagined-octo-telegram/mysitegit/main/which.py
 <br/>  
 Which is a logic calculator I used to design the interface for the gallery page
